@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dphw
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0092-tenant/ci1t-830-0092-app/devfile-sample-dphw@sha256:f7d205a60676d910f70a33d0e1a17d7e1ff0394395239522ee2f0bc4ab9c37da
+        name: my-nodejs
+        resources: {}
+status: {}
